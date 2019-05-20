@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="reset" href="css/reset.css">
+    </link>
+    <link rel="stylesheet" href="css/style.css">
+    </link>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header class="headernavigatiebalk">
+
+        <nav>
+            <ul>
+                <li><a href="#" id="blackHeading">h2 zwart</a></li>
+                <li><a href="#" id="fontComic">Comic Sans</a></li>
+                <li><a href="#" id="beep">Beep</a></li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis nobis fugit sint nesciunt modi
+                    voluptates!</h2>
+            </header>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur doloribus, cupiditate eaque
+                dicta consequuntur exercitationem adipisci laboriosam eius dolor vel, animi impedit quaerat
+                temporibus minima in velit, explicabo quod. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                odit obcaecati debitis
+                voluptates quisquam ullam accusantium
+                quas magni, sequi cupiditate. Iusto sint voluptatum asperiores dolorum, ullam ex sed nobis dolore.</p>
+
+                <p>My money's in that office, right? If she start giving me some <span>bullshit</span> about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, <span>motherfucker</span>. 
+                        Jackie Brown (1997) </p>
+
+
+            <footer>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores cumque officia asperiores odio
+                    nihil iure accusamus veritatis quos! Inventore, repudiandae nulla sapiente dignissimos excepturi
+                    quos laboriosam cupiditate dicta ratione reiciendis. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    Quibusdam fugit odio numquam, beatae nam iusto earum alias amet soluta saepe,
+                    nesciunt vel fugiat possimus nostrum. Atque asperiores totam odio expedita.</p>
+            </footer>
+
+
+            <div class="fotokitten">
+                <img src="img/kitten@2x.jpeg" alt="Kitten">
+            </div>
+
+            <div class="fotokitten afbeelding2">
+
+            </div>
+
+        </article>
+
+
+
+    </main>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var kleurtje = '#00F';
+
+        // $('h2').css({'color': kleurtje});
+
+        $('#blackHeading').click(function () {
+            $('h2').css({ 'color': kleurtje })
+        });
+
+
+        $("#fontComic").click(function(){
+            $('body').css({ 'font-family': "Comic Sans MS" });
+
+        });
+
+        $("#beep").click(function(){
+            $("span").text("*BEEP*");
+            $("span").css({"text-decoration":"none"})
+
+        });
+
+    </script>
+
+</body>
+
+</html>
